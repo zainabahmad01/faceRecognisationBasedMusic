@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .lens {
+    width: 500px;
+    height: 500px;
+    /* background-color: #eee; */
+    border-radius: 20%;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 1;
+
+    border: 5px solid #131111;
+    animation: border-animation 3s infinite linear;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .lens:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes border-animation {
+    0% {
+      border-width: 5px 0 5px 5px;
+    }
+    25% {
+      border-width: 0 5px 5px 5px;
+    }
+    50% {
+      border-width: 5px 5px 0 5px;
+    }
+    75% {
+      border-width: 5px 5px 5px 0;
+    }
+    100% {
+      border-width: 10px 10px 10px 10px;
+    }
+  }
+
+  .capture-btn {
+    display: block;
+    width: 120px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .capture-btn:hover {
+    background-color: #555;
+  }
+
+  #bg{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    position: relative;
+    z-index: 1;
+  }
+
+  #face{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    position: relative;
+    z-index: 1;
+
+  }
+
+  .btn{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+
+  
+  
+
+  
+
